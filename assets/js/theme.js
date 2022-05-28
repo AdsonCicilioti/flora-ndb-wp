@@ -83,5 +83,7 @@ window.addEventListener("load", () => {
       }
     }
   };
-  xhr.send();
+  if (container) {
+    xhr.send();
+  }
 });
