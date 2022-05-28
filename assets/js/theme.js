@@ -39,15 +39,12 @@ window.addEventListener("load", () => {
   var xhr = new XMLHttpRequest(),
     elementId = "#fnb-feed-insta",
     container = document.querySelector(elementId),
-    profileId = "5748260655",
     tkn_ =
       "IGQVJXaEo3cmxVUzFlSXl6dVZA3NlkyRTNydzh1ZA0tDRUt0TUlTNHhvc3E2VldNeHFrMW16ZAVl2Y0treG82eHRMRFZAsandDX29wNXVlRjNRMk5HNmxRMmdDYWNQVkVmU2thZA3RIOFNxVGY1cTctVi1lVwZDZD";
 
   xhr.open(
     "GET",
-    "https://graph.instagram.com/" +
-      profileId +
-      "/media?fields=caption,permalink,media_url,thumbnail_url,media_type&limit=12&access_token=" +
+    "https://graph.instagram.com/me/media?fields=caption,permalink,media_url,thumbnail_url,media_type&limit=12&access_token=" +
       tkn_
   );
   xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
