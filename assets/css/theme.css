@@ -12,7 +12,7 @@ body {
   gap: 12px;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   #fnb-feed-insta {
     grid-template-columns: auto auto auto;
   }
