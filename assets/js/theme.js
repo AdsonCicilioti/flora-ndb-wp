@@ -60,7 +60,7 @@ window.addEventListener("load", () => {
     if (this.readyState === 4) {
       if (xhr.status === 200) {
         var feed = JSON.parse(xhr.responseText);
-        console.log(feed.data);
+        // console.log(feed.data);
 
         for (let index = 0; index < feed.data.length; index++) {
           var post = feed.data[index],
@@ -75,9 +75,7 @@ window.addEventListener("load", () => {
             thumb +
             '" alt="' +
             caption +
-            '"/><p class="caption">' +
-            caption +
-            "...</p></a>";
+            '"/></a>';
         }
       } else {
         console.log("Erro");
