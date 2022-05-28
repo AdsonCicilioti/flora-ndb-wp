@@ -2,6 +2,6 @@ body {
   font-family: Fira Sans, sans-serif;
 }
 
-.slick-slide.slick-current > div {
+.slick-slide.slick-current {
   z-index: 15;
 }
